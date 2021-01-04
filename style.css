@@ -1,0 +1,119 @@
+/*
+Name: Joshua Ramnaraine, Aryan Singh
+Date: 11/27/2020
+Description: Styling for all webpages except game. This is being used to keep our website styling consistent
+ */
+html{
+    background-color:deepskyblue ;
+}
+h1{
+    border: 10px solid darkgreen;
+    background-color: #4cbb17;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+h2{
+    border: 10px solid darkgreen;
+    background-color: #4cbb17;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    margin: auto;
+}
+ul li {
+    float: left;
+    list-style: none;
+    margin-right: 5em;
+    font-size: 10px;
+    padding: 12px;
+    color: black;
+    position: relative;
+    left: 5%;
+
+
+
+}
+li a {
+    color: black;
+    text-decoration: none;
+    float: left;
+    font-size: 25px;
+    padding: 12px;
+}
+
+li a:hover {
+    color: white ;
+    -webkit-transform: rotate(-10deg) scale(1.2);
+    -moz-transform: rotate(-10deg) scale(1.2);
+    -o-transform: rotate(-10deg) scale(1.2);
+    /*When you hover over the nav bar, it makes the link rotate and change color.*/
+}
+.left a:hover {
+
+    /*Transition*/
+    -webkit-transition:All .5s ease;
+    -moz-transition:All .5s ease;
+    -o-transition:All .5s ease;
+    /*All this code is to make the text rotate in a certain direction*/
+    /*Transform*/
+    -webkit-transform: rotate(-5deg) scale(1.2);
+    -moz-transform: rotate(-5deg) scale(1.2);
+    -o-transform: rotate(-5deg) scale(1.2);
+    /*All this code is to make the text rotate in a certain direction*/
+}
+
+.right a:hover {
+
+    /*Transition*/
+    -webkit-transition:All .5s ease;
+    -moz-transition:All .5s ease;
+    -o-transition:All .5s ease;
+    /*All this code is to make the text rotate in a certain direction*/
+    /*Transform*/
+    -webkit-transform: rotate(5deg) scale(1.2);
+    -moz-transform: rotate(5deg) scale(1.2);
+    -o-transform: rotate(5deg) scale(1.2);
+    /*All this code is to make the text rotate in a certain direction*/
+}
+a:link {
+    text-decoration: none;
+
+}
+a:visited {
+    text-decoration: none;
+
+}
+img{
+    position: relative;
+    left: 29%;
+    border: 10px solid black;
+    padding: 20px;
+
+}
+#aboutUsContent, #HowToPlayContent{
+    font-weight: bold;
+    border: 10px solid darkgreen;
+    background-color: #4cbb17;
+    color: black;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    padding: 10px;
+}
+button{
+    width: 100px;
+    height: 50px;
+    background-color: #4cbb17;
+    font-weight: bold;
+    color: black;
+}
+button a {
+    color: black;
+}
+
+#buttonDiv{
+    text-align: center;
+}

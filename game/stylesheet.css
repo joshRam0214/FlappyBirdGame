@@ -1,0 +1,68 @@
+/*
+Name: Joshua Ramnaraine, Aryan Singh
+Date: 11/27/2020
+Description: stylesheet for flappy bird it's self
+*/
+body{
+    display: flex;/*fills free space*/
+    background-color: deepskyblue;
+
+}
+#game_screen{
+    width: 500px;
+    height: 730px;
+    position: absolute;/*Positons with reference to the screen*/
+    left: 60px;
+}
+#sky{
+    background-image: url("images/game-background.png");
+    background-color: lightblue;
+    width: 500px;
+    height: 580px;
+    position: absolute;/*positioned with reference to the game_screen div*/
+}
+#ground{
+    background-image: url("images/floor.png");
+    width: 500px;
+    height: 150px;
+    top: 580px;
+    position: absolute;/*positioned with reference to the game_screen div*/
+    z-index: +1;
+}
+#bird{
+    background-image: url("images/bird.png");
+    width: 60px;
+    height: 45px;
+    position: absolute;/*positioned with reference to the sky div*/
+
+}
+#obstacles{
+    background-image: url("images/flappybird-pipe.png");
+    width: 60px;
+    height: 300px;
+    position: absolute;/*positioned with reference to the game_screen div*/
+}
+#obstacles_reflect{
+    background-image: url("images/flappybird-pipe.png");
+    transform: rotate(180deg);
+    width: 60px;
+    height: 300px;
+    position: absolute;/*positioned with reference to the game_screen div*/
+}
+/*Allows the obstacles as if they appearing from inside the game_screen*/
+#border_right{
+    width: 60px;
+    height: 790px;
+    position: absolute;/*positioned with reference to the game_screen div*/
+    background-color: deepskyblue;
+    z-index: +2;/*used the to hide the obstacles from outside of the screen*/
+    left:560px;
+}
+#top_border{
+    width: 620px;
+    height: 50px;
+    position: absolute;/*positioned with reference to the game_screen div*/
+    background-color: deepskyblue;
+    z-index: +2;/*Used to make sure obstacles dont appear from the top the screen*/
+    top: -50px;
+}
